@@ -20,7 +20,7 @@ pipeline {
             steps {
                 
               sh '''
-                          helm upgrade --install jenkins-test-helm devops17-helm1 --values -f $WORKSPACE/dev-values.yaml
+                          helm upgrade --install jenkins-test-helm helm --values -f $WORKSPACE/dev-values.yaml
               '''
                 
             }
